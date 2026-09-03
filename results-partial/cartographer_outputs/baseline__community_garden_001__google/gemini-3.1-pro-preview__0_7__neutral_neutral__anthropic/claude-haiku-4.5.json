@@ -1,0 +1,9 @@
+{
+  "trace_a_scores": null,
+  "trace_b_scores": null,
+  "parse_success": false,
+  "parse_error": "upstream judge parse failure",
+  "raw_response": "",
+  "tokens_input": 0,
+  "tokens_output": 0
+}

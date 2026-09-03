@@ -1,0 +1,29 @@
+problems_path: problems/battery.json
+
+prompts:
+  analyst: prompts/analyst.md
+  judge: prompts/judge.md
+  cartographer: prompts/cartographer.md
+
+# Subject models (being measured)
+models:
+  - "google/gemini-3.1-pro-preview"
+  - "openai/gpt-4.1"
+
+# Instrument models (staff)
+judge_models:
+  - "anthropic/claude-haiku-4.5"
+  - "openai/gpt-5.4-mini"
+cartographer_model: "anthropic/claude-haiku-4.5"
+answer_extraction_model: "anthropic/claude-haiku-4.5"
+analyst_model: "anthropic/claude-haiku-4.5"
+
+temperatures: [0, 0.3, 0.5, 0.7, 1.0]
+
+validation_sample_fraction: 0.2
+
+api:
+  max_retries: 3
+  backoff_base: 2.0
+
+output_dir: results

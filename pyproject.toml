@@ -1,0 +1,27 @@
+[project]
+name = "tracelab"
+version = "0.1.0"
+description = "An experiment measuring structural deformation in LLM reasoning under opinion-framed prompts. Includes 539 traces across 15 problems, 2 models, and 5 temperatures."
+requires-python = ">=3.11"
+license = {text = "Apache-2.0"}
+authors = [{name = "corgido"}]
+readme = "README.md"
+
+dependencies = [
+    "openrouter",
+    "pyyaml",
+    "pandas",
+    "matplotlib",
+    "numpy",
+]
+
+[project.urls]
+Repository = "https://github.com/corgido/tracelab"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["src"]
+include-package-data = false
